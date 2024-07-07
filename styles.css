@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#myStrengthMeter {
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#myStrengthMeter div {
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+#myStrengthText {
+    margin-top: 10px;
+    font-size: 14px;
+}
